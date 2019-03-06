@@ -6,7 +6,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 public class TestUtil {
-  Util c;
+  private Util c;
 
   @Before
   public void setUp() { 
