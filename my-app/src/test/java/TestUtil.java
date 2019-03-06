@@ -18,5 +18,10 @@ public class TestUtil {
   { 
 	assertTrue(!c.compute(5));
   }
+  @Test
+  public void testlengtheven() 
+  { 
+	assertTrue(!c.compute(10,20,30,40));
+  }
   
 }
