@@ -29,9 +29,14 @@ public class TestUtil {
 	assertTrue(c.compute(0,12,123,23,56,78,100));
   }
   @Test
-  public void testsumisdividableofoneelement() 
+  public void testsumisdividableofoneelement() // Now length and values are important
   { 
 	assertTrue(c.compute(3,10,2,5,7));
+  }
+  @Test
+  public void testsumisnotdividableofoneelement() // Now length and values are important
+  { 
+	assertTrue(!c.compute(2,13,4));
   }
 	
 }
