@@ -23,5 +23,10 @@ public class TestUtil {
   { 
 	assertTrue(!c.compute(10,20,30,40));
   }
+  @Test (expected = RuntimeException.class)
+  public void testzeroinarray()  //It does not matter how long the array is 
+  { 
+	assertTrue(c.compute(0,12,123,23,56,78,100));
+  }
   
 }
