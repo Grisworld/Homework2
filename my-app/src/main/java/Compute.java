@@ -1,5 +1,5 @@
 public class Compute {
-  MessageQueue mq;
+  private MessageQueue mq;
 
   public Compute(MessageQueue mq) {
     this.mq = mq;

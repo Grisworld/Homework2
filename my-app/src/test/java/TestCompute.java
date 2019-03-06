@@ -17,11 +17,16 @@ public class TestCompute {
 	c=new Compute(mq);
   }
   @Test
-  public void testmqsizezero() //It does not matter what e is 
+  public void testmqsizezero() //It does not matter what e is since mq is ""
   {
   	when(mq.size()).thenReturn(0);
     	assertEquals(-1,c.countNumberOfOccurrences("")); 
-    
-    
+  }
+  @Test
+  public void testmqcontainsnotE() // mq is any string that does not contain hakki itself
+  {
+  	when(mq.size()).thenReturn(5);
+    	when(mq.contains("hakki")).thenReturn(false);
+    	assertEquals(0,c.countNumberOfOccurrences("hakki"));
   }
 }
