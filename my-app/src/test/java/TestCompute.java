@@ -29,4 +29,17 @@ public class TestCompute {
     	when(mq.contains("hakki")).thenReturn(false);
     	assertEquals(0,c.countNumberOfOccurrences("hakki"));
   }
+  @Test
+  public void testmqreturnscounter() // mq and e are Raiden string itself and I assumed that getAt works as a substring
+  {
+  	when(mq.size()).thenReturn(6);
+    	when(mq.contains("Raiden")).thenReturn(true);
+    	when(mq.getAt(0)).thenReturn("Raiden");
+    	when(mq.getAt(1)).thenReturn("aiden");
+    	when(mq.getAt(2)).thenReturn("iden");
+    	when(mq.getAt(3)).thenReturn("den");
+    	when(mq.getAt(4)).thenReturn("en");
+    	when(mq.getAt(5)).thenReturn("n");
+    	assertEquals(1,c.countNumberOfOccurrences("Raiden"));
+  }
 }
