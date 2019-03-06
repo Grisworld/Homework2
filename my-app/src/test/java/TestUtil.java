@@ -19,7 +19,7 @@ public class TestUtil {
 	assertTrue(!c.compute(5));
   }
   @Test
-  public void testlengtheven() 
+  public void testlengtheven() // It does not matter what values are
   { 
 	assertTrue(!c.compute(10,20,30,40));
   }
@@ -28,5 +28,10 @@ public class TestUtil {
   { 
 	assertTrue(c.compute(0,12,123,23,56,78,100));
   }
-  
+  @Test
+  public void testsumisdividableofoneelement() 
+  { 
+	assertTrue(c.compute(3,10,2,5,7));
+  }
+	
 }
