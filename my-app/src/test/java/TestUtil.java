@@ -14,7 +14,7 @@ public class TestUtil {
   }
 
   @Test
-  public void testlengthone() 
+  public void testlengthone() // It does not matter the value is
   { 
 	assertTrue(!c.compute(5));
   }
