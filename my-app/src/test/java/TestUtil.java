@@ -9,8 +9,14 @@ public class TestUtil {
   Util c;
 
   @Before
-  public void setUp() { c = new Util(); }
+  public void setUp() { 
+	c = new Util(); 
+  }
 
   @Test
-  public void example() { assertTrue(true); }
+  public void testlengthone() 
+  { 
+	assertTrue(!c.compute(5));
+  }
+  
 }
